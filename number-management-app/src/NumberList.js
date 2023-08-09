@@ -1,14 +1,11 @@
 import React from 'react';
 
 const NumberList = ({ numbers }) => {
+  const mergedNumbersString = numbers.join(', ');
   return (
     <div>
       <h2>Merged Numbers</h2>
-      <ul>
-        {numbers.map((number, index) => (
-          <li key={index}>{number}</li>
-        ))}
-      </ul>
+      <p>{'{ "numbers :' + mergedNumbersString + '}'}</p>
     </div>
   );
 };
